@@ -45,6 +45,7 @@
                 }
             }
         }
+        mapData.listMarkPostions = listPositions;
         return mapData;
     }
     return nil;

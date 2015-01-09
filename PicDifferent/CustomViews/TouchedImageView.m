@@ -18,8 +18,7 @@
 {
     UITouch *aTouch = [touches anyObject];
     CGPoint point = [aTouch locationInView:self];
-    point = [self convertPoint:point toView:self];
-    MarkPosition *markedPosition = [_checkMap markedOnMapAtPosition:point];
+    MarkPosition *markedPosition = [_data.checkedMap markedOnMapAtPosition:point];
     if (markedPosition) {
         [self drawCircleOn:[markedPosition markFrame]];
         if (_delegate && [_delegate respondsToSelector:@selector(touchedImageView:markedOnFrame:)]) {
@@ -44,27 +43,14 @@
     }
 }
 
--(void)setCheckMap:(MapImageData *)checkMap
+-(void)setData:(ImageData *)data
 {
-    if (checkMap) {
-        _checkMap = checkMap;
-        [self resizeView];
+    if (data) {
+        _data = data;
+        self.image = [UIImage imageNamed:data.imageName];
     }
 }
 
-
--(void)resizeView
-{
-    if (self.image) {
-        imageSize = self.image.size;
-    }
-    if (imageSize.width != 0 && imageSize.height !=0 ) {
-        realSize = self.frame.size;
-        float ratioWidth = (realSize.width - imageSize.height)/imageSize.height;
-        float ratioHeight = (realSize.height - imageSize.width)/imageSize.width;
-        [_checkMap updateMarkPositionBaseOnWidthRatio:ratioWidth andHeightRatio:ratioHeight];
-    }
-}
 
 /*
 // Only override drawRect: if you perform custom drawing.
