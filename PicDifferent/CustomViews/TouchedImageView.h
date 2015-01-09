@@ -22,5 +22,4 @@
 @property(nonatomic,weak)id<TouchedImageViewDelegate> delegate;
 -(void)refreshView;
 -(void)drawCircleOn:(CGRect)frame;
--(void)printPisition;
 @end

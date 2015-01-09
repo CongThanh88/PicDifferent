@@ -32,5 +32,21 @@
     }
 }
 
--(void)
++(MapImageData*)parseData:(NSArray *)dictArray
+{
+    if (dictArray && dictArray.count>0) {
+        MapImageData *mapData = [[MapImageData alloc]init];
+        NSArray *listPositions = [[NSArray alloc]init];
+        for (NSDictionary *dictItem in dictArray) {
+            if (dictItem) {
+                MarkPosition *position = [MarkPosition parseData:dictItem];
+                if (position) {
+                    listPositions = [listPositions arrayByAddingObject:position];
+                }
+            }
+        }
+        return mapData;
+    }
+    return nil;
+}
 @end

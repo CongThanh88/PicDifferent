@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "TouchedImageView.h"
+#import "CustomViews/CheckMarkListView.h"
 
 @interface ViewController : UIViewController<TouchedImageViewDelegate>
 @property (weak, nonatomic) IBOutlet TouchedImageView *leftImage;
+@property (weak, nonatomic) IBOutlet CheckMarkListView *checkMarkListView;
 
 @property (weak, nonatomic) IBOutlet TouchedImageView *rightImage;
 - (IBAction)btnRefresh:(id)sender;

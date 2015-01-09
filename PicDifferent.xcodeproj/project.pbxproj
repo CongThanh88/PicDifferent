@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BD52991A5ED7E200CA8589 /* CheckMarkListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD52981A5ED7E200CA8589 /* CheckMarkListView.m */; };
+		18BD529C1A5ED80A00CA8589 /* CheckMarkItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD529B1A5ED80A00CA8589 /* CheckMarkItemView.m */; };
+		18BD529F1A5EDEDA00CA8589 /* ic_checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BD529D1A5EDEDA00CA8589 /* ic_checked@2x.png */; };
+		18BD52A01A5EDEDA00CA8589 /* ic_unCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BD529E1A5EDEDA00CA8589 /* ic_unCheck@2x.png */; };
+		18BD52A21A5F541000CA8589 /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18BD52A11A5F541000CA8589 /* GameData.plist */; };
+		18BD52A51A5F587E00CA8589 /* GameLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD52A41A5F587E00CA8589 /* GameLevel.m */; };
 		18C314221A5D8A9C00AA78DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C314211A5D8A9C00AA78DA /* main.m */; };
 		18C314251A5D8A9C00AA78DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C314241A5D8A9C00AA78DA /* AppDelegate.m */; };
 		18C314281A5D8A9C00AA78DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C314271A5D8A9C00AA78DA /* ViewController.m */; };
@@ -34,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18BD52971A5ED7E200CA8589 /* CheckMarkListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckMarkListView.h; path = CustomViews/CheckMarkListView.h; sourceTree = "<group>"; };
+		18BD52981A5ED7E200CA8589 /* CheckMarkListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CheckMarkListView.m; path = CustomViews/CheckMarkListView.m; sourceTree = "<group>"; };
+		18BD529A1A5ED80A00CA8589 /* CheckMarkItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckMarkItemView.h; path = CustomViews/CheckMarkItemView.h; sourceTree = "<group>"; };
+		18BD529B1A5ED80A00CA8589 /* CheckMarkItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CheckMarkItemView.m; path = CustomViews/CheckMarkItemView.m; sourceTree = "<group>"; };
+		18BD529D1A5EDEDA00CA8589 /* ic_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_checked@2x.png"; sourceTree = "<group>"; };
+		18BD529E1A5EDEDA00CA8589 /* ic_unCheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_unCheck@2x.png"; sourceTree = "<group>"; };
+		18BD52A11A5F541000CA8589 /* GameData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
+		18BD52A31A5F587E00CA8589 /* GameLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLevel.h; sourceTree = "<group>"; };
+		18BD52A41A5F587E00CA8589 /* GameLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLevel.m; sourceTree = "<group>"; };
 		18C3141C1A5D8A9C00AA78DA /* PicDifferent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicDifferent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C314201A5D8A9C00AA78DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C314211A5D8A9C00AA78DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,6 +159,10 @@
 			children = (
 				18C314461A5D8F2E00AA78DA /* TouchedImageView.h */,
 				18C314471A5D8F2E00AA78DA /* TouchedImageView.m */,
+				18BD52971A5ED7E200CA8589 /* CheckMarkListView.h */,
+				18BD52981A5ED7E200CA8589 /* CheckMarkListView.m */,
+				18BD529A1A5ED80A00CA8589 /* CheckMarkItemView.h */,
+				18BD529B1A5ED80A00CA8589 /* CheckMarkItemView.m */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -155,6 +174,8 @@
 				18C3144B1A5D905300AA78DA /* MapImageData.m */,
 				18C3144D1A5D907B00AA78DA /* MarkPosition.h */,
 				18C3144E1A5D907B00AA78DA /* MarkPosition.m */,
+				18BD52A31A5F587E00CA8589 /* GameLevel.h */,
+				18BD52A41A5F587E00CA8589 /* GameLevel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -164,6 +185,7 @@
 			children = (
 				18C314541A5D972E00AA78DA /* Images */,
 				18C314511A5D948600AA78DA /* Icons */,
+				18BD52A11A5F541000CA8589 /* GameData.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -171,6 +193,8 @@
 		18C314511A5D948600AA78DA /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				18BD529D1A5EDEDA00CA8589 /* ic_checked@2x.png */,
+				18BD529E1A5EDEDA00CA8589 /* ic_unCheck@2x.png */,
 				18C314591A5D9AB700AA78DA /* ic_refresh@2x.png */,
 				18C314521A5D948600AA78DA /* ic_circle_check_mark@2x.png */,
 			);
@@ -266,11 +290,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BD529F1A5EDEDA00CA8589 /* ic_checked@2x.png in Resources */,
 				18C314581A5D972E00AA78DA /* rightImage.png in Resources */,
 				18C314531A5D948600AA78DA /* ic_circle_check_mark@2x.png in Resources */,
 				18C3142B1A5D8A9C00AA78DA /* Main.storyboard in Resources */,
 				18C314301A5D8A9C00AA78DA /* LaunchScreen.xib in Resources */,
 				18C3145A1A5D9AB700AA78DA /* ic_refresh@2x.png in Resources */,
+				18BD52A21A5F541000CA8589 /* GameData.plist in Resources */,
+				18BD52A01A5EDEDA00CA8589 /* ic_unCheck@2x.png in Resources */,
 				18C3142D1A5D8A9C00AA78DA /* Images.xcassets in Resources */,
 				18C314571A5D972E00AA78DA /* leftImage.png in Resources */,
 			);
@@ -291,6 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C314281A5D8A9C00AA78DA /* ViewController.m in Sources */,
+				18BD52A51A5F587E00CA8589 /* GameLevel.m in Sources */,
+				18BD529C1A5ED80A00CA8589 /* CheckMarkItemView.m in Sources */,
+				18BD52991A5ED7E200CA8589 /* CheckMarkListView.m in Sources */,
 				18C3144C1A5D905300AA78DA /* MapImageData.m in Sources */,
 				18C314251A5D8A9C00AA78DA /* AppDelegate.m in Sources */,
 				18C3144F1A5D907B00AA78DA /* MarkPosition.m in Sources */,
@@ -419,11 +449,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: abc xyz (56XKYX4NM4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: do tam (VXZ44VXW83)";
 				INFOPLIST_FILE = PicDifferent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4b00396d-7dc6-4484-80a0-383581be9b4c";
+				PROVISIONING_PROFILE = "61367b7a-8603-4c29-9200-1a8a251b0539";
 			};
 			name = Debug;
 		};
@@ -434,7 +464,7 @@
 				INFOPLIST_FILE = PicDifferent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4b00396d-7dc6-4484-80a0-383581be9b4c";
+				PROVISIONING_PROFILE = "61367b7a-8603-4c29-9200-1a8a251b0539";
 			};
 			name = Release;
 		};

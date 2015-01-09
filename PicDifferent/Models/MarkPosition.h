@@ -16,7 +16,7 @@
 @property(nonatomic,assign) float end_Y;
 
 -(BOOL)isContainedPoint:(CGPoint)point;
--(CGRect)frame;
+-(CGRect)markFrame;
 -(void)resizeBaseOnWidthRatio:(float)widthRatio andHeightRatio:(float)heightRatio;
--(void)printPosition;
++(MarkPosition*)parseData:(NSDictionary*)dictItem;
 @end

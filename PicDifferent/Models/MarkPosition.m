@@ -19,7 +19,7 @@
     return NO;
 }
 
--(CGRect)frame
+-(CGRect)markFrame
 {
     float width = ABS(_end_X - _start_X);
     float height = ABS(_end_Y - _start_Y);
@@ -38,8 +38,17 @@
     _end_Y = _end_Y + (_end_Y*heightRatio);
 }
 
--(void)printPosition
+
++(MarkPosition*)parseData:(NSDictionary *)dictItem
 {
-    NSLog(@"Position-- x:%f y:%F endX:%f)
+    if (dictItem) {
+        MarkPosition *position = [[MarkPosition alloc]init];
+        position.start_X = [[dictItem objectForKey:@"start_X"] floatValue];
+        position.start_Y = [[dictItem objectForKey:@"start_Y"] floatValue];
+        position.end_X = [[dictItem objectForKey:@"end_X"] floatValue];
+        position.end_Y = [[dictItem objectForKey:@"end_Y"] floatValue];
+        return position;
+    }
+    return nil;
 }
 @end
