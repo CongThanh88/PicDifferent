@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ImageData.h"
+#import "MapImageData.h"
 
 @interface GameLevel : NSObject
-@property(nonatomic,strong)ImageData *leftImage;
-@property(nonatomic,strong)ImageData *rightImage;
+@property(nonatomic,strong)NSString *leftImage;
+@property(nonatomic,strong)NSString *rightImage;
+@property(nonatomic,strong)MapImageData *gameData;
 +(GameLevel*)parseData:(NSDictionary*)dict;
 +(NSArray*)parseListData:(NSArray*)dictArray;
 @end

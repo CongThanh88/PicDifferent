@@ -14,6 +14,7 @@
 @property(nonatomic,assign) float end_X;
 @property(nonatomic,assign) float start_Y;
 @property(nonatomic,assign) float end_Y;
+@property(nonatomic,assign) BOOL isChecked;
 
 -(BOOL)isContainedPoint:(CGPoint)point;
 -(CGRect)markFrame;

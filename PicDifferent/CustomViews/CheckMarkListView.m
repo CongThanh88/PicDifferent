@@ -42,6 +42,7 @@
 -(void)setupListItemViews
 {
     if (_checkMarkNumber>0) {
+        listItemViews = [[NSArray alloc]init];
         float margin = 3;
         float height = self.frame.size.height;
         for (int i=0; i<_checkMarkNumber; i++) {
@@ -70,9 +71,10 @@
     if (listItemViews && listItemViews.count>0) {
         for (CheckMarkItemView *itemView in listItemViews) {
             if (itemView) {
-                itemView.isChecked = NO;
+                [itemView removeFromSuperview];
             }
         }
+        listItemViews = nil;
     }
     checkedNumber = 0;
 }

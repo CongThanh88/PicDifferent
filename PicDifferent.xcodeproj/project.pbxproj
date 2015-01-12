@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18115B251A601CEC001CB7C4 /* leftImage02.png in Resources */ = {isa = PBXBuildFile; fileRef = 18115B1F1A601CEC001CB7C4 /* leftImage02.png */; };
+		18115B261A601CEC001CB7C4 /* leftImage03.png in Resources */ = {isa = PBXBuildFile; fileRef = 18115B201A601CEC001CB7C4 /* leftImage03.png */; };
+		18115B271A601CEC001CB7C4 /* rightImage02.png in Resources */ = {isa = PBXBuildFile; fileRef = 18115B211A601CEC001CB7C4 /* rightImage02.png */; };
+		18115B281A601CEC001CB7C4 /* rightImage03.png in Resources */ = {isa = PBXBuildFile; fileRef = 18115B221A601CEC001CB7C4 /* rightImage03.png */; };
+		18115B291A601CEC001CB7C4 /* leftImage01.png in Resources */ = {isa = PBXBuildFile; fileRef = 18115B231A601CEC001CB7C4 /* leftImage01.png */; };
+		18115B2A1A601CEC001CB7C4 /* rightImage01.png in Resources */ = {isa = PBXBuildFile; fileRef = 18115B241A601CEC001CB7C4 /* rightImage01.png */; };
 		18BD52991A5ED7E200CA8589 /* CheckMarkListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD52981A5ED7E200CA8589 /* CheckMarkListView.m */; };
 		18BD529C1A5ED80A00CA8589 /* CheckMarkItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD529B1A5ED80A00CA8589 /* CheckMarkItemView.m */; };
 		18BD529F1A5EDEDA00CA8589 /* ic_checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BD529D1A5EDEDA00CA8589 /* ic_checked@2x.png */; };
@@ -24,10 +30,7 @@
 		18C3144C1A5D905300AA78DA /* MapImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C3144B1A5D905300AA78DA /* MapImageData.m */; };
 		18C3144F1A5D907B00AA78DA /* MarkPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C3144E1A5D907B00AA78DA /* MarkPosition.m */; };
 		18C314531A5D948600AA78DA /* ic_circle_check_mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C314521A5D948600AA78DA /* ic_circle_check_mark@2x.png */; };
-		18C314571A5D972E00AA78DA /* leftImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C314551A5D972E00AA78DA /* leftImage.png */; };
-		18C314581A5D972E00AA78DA /* rightImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C314561A5D972E00AA78DA /* rightImage.png */; };
 		18C3145A1A5D9AB700AA78DA /* ic_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C314591A5D9AB700AA78DA /* ic_refresh@2x.png */; };
-		A46A9ECA1A5F7BCC008283B1 /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = A46A9EC91A5F7BCC008283B1 /* ImageData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18115B1F1A601CEC001CB7C4 /* leftImage02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftImage02.png; sourceTree = "<group>"; };
+		18115B201A601CEC001CB7C4 /* leftImage03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftImage03.png; sourceTree = "<group>"; };
+		18115B211A601CEC001CB7C4 /* rightImage02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightImage02.png; sourceTree = "<group>"; };
+		18115B221A601CEC001CB7C4 /* rightImage03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightImage03.png; sourceTree = "<group>"; };
+		18115B231A601CEC001CB7C4 /* leftImage01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftImage01.png; sourceTree = "<group>"; };
+		18115B241A601CEC001CB7C4 /* rightImage01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightImage01.png; sourceTree = "<group>"; };
 		18BD52971A5ED7E200CA8589 /* CheckMarkListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckMarkListView.h; path = CustomViews/CheckMarkListView.h; sourceTree = "<group>"; };
 		18BD52981A5ED7E200CA8589 /* CheckMarkListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CheckMarkListView.m; path = CustomViews/CheckMarkListView.m; sourceTree = "<group>"; };
 		18BD529A1A5ED80A00CA8589 /* CheckMarkItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckMarkItemView.h; path = CustomViews/CheckMarkItemView.h; sourceTree = "<group>"; };
@@ -70,11 +79,7 @@
 		18C3144D1A5D907B00AA78DA /* MarkPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarkPosition.h; path = Models/MarkPosition.h; sourceTree = "<group>"; };
 		18C3144E1A5D907B00AA78DA /* MarkPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarkPosition.m; path = Models/MarkPosition.m; sourceTree = "<group>"; };
 		18C314521A5D948600AA78DA /* ic_circle_check_mark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_circle_check_mark@2x.png"; sourceTree = "<group>"; };
-		18C314551A5D972E00AA78DA /* leftImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftImage.png; sourceTree = "<group>"; };
-		18C314561A5D972E00AA78DA /* rightImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightImage.png; sourceTree = "<group>"; };
 		18C314591A5D9AB700AA78DA /* ic_refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_refresh@2x.png"; sourceTree = "<group>"; };
-		A46A9EC81A5F7BCC008283B1 /* ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageData.h; path = Models/ImageData.h; sourceTree = "<group>"; };
-		A46A9EC91A5F7BCC008283B1 /* ImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageData.m; path = Models/ImageData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +184,6 @@
 				18C3144E1A5D907B00AA78DA /* MarkPosition.m */,
 				18BD52A31A5F587E00CA8589 /* GameLevel.h */,
 				18BD52A41A5F587E00CA8589 /* GameLevel.m */,
-				A46A9EC81A5F7BCC008283B1 /* ImageData.h */,
-				A46A9EC91A5F7BCC008283B1 /* ImageData.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -209,8 +212,12 @@
 		18C314541A5D972E00AA78DA /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				18C314551A5D972E00AA78DA /* leftImage.png */,
-				18C314561A5D972E00AA78DA /* rightImage.png */,
+				18115B1F1A601CEC001CB7C4 /* leftImage02.png */,
+				18115B201A601CEC001CB7C4 /* leftImage03.png */,
+				18115B211A601CEC001CB7C4 /* rightImage02.png */,
+				18115B221A601CEC001CB7C4 /* rightImage03.png */,
+				18115B231A601CEC001CB7C4 /* leftImage01.png */,
+				18115B241A601CEC001CB7C4 /* rightImage01.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -268,6 +275,7 @@
 					};
 					18C314341A5D8A9C00AA78DA = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = CXRTNZ8FZR;
 						TestTargetID = 18C3141B1A5D8A9C00AA78DA;
 					};
 				};
@@ -297,15 +305,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BD529F1A5EDEDA00CA8589 /* ic_checked@2x.png in Resources */,
-				18C314581A5D972E00AA78DA /* rightImage.png in Resources */,
 				18C314531A5D948600AA78DA /* ic_circle_check_mark@2x.png in Resources */,
 				18C3142B1A5D8A9C00AA78DA /* Main.storyboard in Resources */,
+				18115B2A1A601CEC001CB7C4 /* rightImage01.png in Resources */,
+				18115B281A601CEC001CB7C4 /* rightImage03.png in Resources */,
 				18C314301A5D8A9C00AA78DA /* LaunchScreen.xib in Resources */,
+				18115B251A601CEC001CB7C4 /* leftImage02.png in Resources */,
 				18C3145A1A5D9AB700AA78DA /* ic_refresh@2x.png in Resources */,
+				18115B291A601CEC001CB7C4 /* leftImage01.png in Resources */,
 				18BD52A21A5F541000CA8589 /* GameData.plist in Resources */,
+				18115B271A601CEC001CB7C4 /* rightImage02.png in Resources */,
 				18BD52A01A5EDEDA00CA8589 /* ic_unCheck@2x.png in Resources */,
 				18C3142D1A5D8A9C00AA78DA /* Images.xcassets in Resources */,
-				18C314571A5D972E00AA78DA /* leftImage.png in Resources */,
+				18115B261A601CEC001CB7C4 /* leftImage03.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +341,6 @@
 				18BD52991A5ED7E200CA8589 /* CheckMarkListView.m in Sources */,
 				18C3144C1A5D905300AA78DA /* MapImageData.m in Sources */,
 				18C314251A5D8A9C00AA78DA /* AppDelegate.m in Sources */,
-				A46A9ECA1A5F7BCC008283B1 /* ImageData.m in Sources */,
 				18C3144F1A5D907B00AA78DA /* MarkPosition.m in Sources */,
 				18C314221A5D8A9C00AA78DA /* main.m in Sources */,
 				18C314481A5D8F2E00AA78DA /* TouchedImageView.m in Sources */,
@@ -456,11 +467,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: do tam (VXZ44VXW83)";
 				INFOPLIST_FILE = PicDifferent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4b00396d-7dc6-4484-80a0-383581be9b4c";
+				PROVISIONING_PROFILE = "61367b7a-8603-4c29-9200-1a8a251b0539";
 			};
 			name = Debug;
 		};
@@ -468,11 +479,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: do tam (VXZ44VXW83)";
 				INFOPLIST_FILE = PicDifferent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4b00396d-7dc6-4484-80a0-383581be9b4c";
+				PROVISIONING_PROFILE = "61367b7a-8603-4c29-9200-1a8a251b0539";
 			};
 			name = Release;
 		};

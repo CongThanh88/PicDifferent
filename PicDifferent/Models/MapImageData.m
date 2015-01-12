@@ -50,4 +50,15 @@
     }
     return nil;
 }
+
+-(void)resetMarkPosition
+{
+    if (_listMarkPostions && _listMarkPostions) {
+        for (MarkPosition *position in _listMarkPostions) {
+            if (position) {
+                position.isChecked = NO;
+            }
+        }
+    }
+}
 @end

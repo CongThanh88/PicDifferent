@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ImageData.h"
+#import "MapImageData.h"
+
 @class TouchedImageView;
 
 @protocol TouchedImageViewDelegate <NSObject>
@@ -17,8 +18,9 @@
 @end
 
 @interface TouchedImageView : UIImageView
-@property(nonatomic,strong)ImageData *data;
+@property(nonatomic,strong)MapImageData *data;
 @property(nonatomic,weak)id<TouchedImageViewDelegate> delegate;
 -(void)refreshView;
 -(void)drawCircleOn:(CGRect)frame;
+-(void)resetData;
 @end

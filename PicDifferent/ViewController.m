@@ -26,9 +26,12 @@
     }
     [_leftImage refreshView];
     [_rightImage refreshView];
+    [_leftImage resetData];
+    [_rightImage resetData];
     
     [self loadGame:currentLevel];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     currentLevel = 0;
@@ -47,15 +50,20 @@
     [self loadGame:currentLevel];
 }
 
--(void)loadGame:(int)level
+-(void)loadGame:(NSInteger)level
 {
     if (gameLevels) {
-        GameLevel *gameData = [gameLevels objectAtIndex:level];
-        if (gameData) {
+        GameLevel *gameLevel = [gameLevels objectAtIndex:level];
+        if (gameLevel) {
             [_checkMarkListView resetListCheckMark];
-            _leftImage.data = gameData.leftImage;
-            _rightImage.data = gameData.rightImage;
-            _checkMarkListView.checkMarkNumber = gameData.leftImage.checkedMap.listMarkPostions.count;
+            
+            _leftImage.image = [UIImage imageNamed:gameLevel.leftImage];
+            _rightImage.image = [UIImage imageNamed:gameLevel.rightImage];
+            
+            _leftImage.data = gameLevel.gameData;
+            _rightImage.data = gameLevel.gameData;
+            
+            _checkMarkListView.checkMarkNumber = gameLevel.gameData.listMarkPostions.count;
         }
     }
 }

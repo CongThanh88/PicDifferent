@@ -15,4 +15,5 @@
 -(MarkPosition*)markedOnMapAtPosition:(CGPoint)point;
 -(void)updateMarkPositionBaseOnWidthRatio:(float)widthRatio andHeightRatio:(float)heightRatio;
 +(MapImageData*)parseData:(NSArray*)dictArray;
+-(void)resetMarkPosition;
 @end

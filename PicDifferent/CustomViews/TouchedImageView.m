@@ -18,8 +18,9 @@
 {
     UITouch *aTouch = [touches anyObject];
     CGPoint point = [aTouch locationInView:self];
-    MarkPosition *markedPosition = [_data.checkedMap markedOnMapAtPosition:point];
-    if (markedPosition) {
+    MarkPosition *markedPosition = [_data markedOnMapAtPosition:point];
+    if (markedPosition && !markedPosition.isChecked) {
+        markedPosition.isChecked = YES;
         [self drawCircleOn:[markedPosition markFrame]];
         if (_delegate && [_delegate respondsToSelector:@selector(touchedImageView:markedOnFrame:)]) {
             [_delegate touchedImageView:self markedOnFrame:[markedPosition markFrame]];
@@ -43,11 +44,15 @@
     }
 }
 
--(void)setData:(ImageData *)data
+-(void)resetData
+{
+    [_data resetMarkPosition];
+}
+
+-(void)setData:(MapImageData *)data
 {
     if (data) {
         _data = data;
-        self.image = [UIImage imageNamed:data.imageName];
     }
 }
 
