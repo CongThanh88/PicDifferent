@@ -17,6 +17,7 @@
 {
     NSArray *gameLevels;
     NSInteger currentLevel;
+    GADBannerView *gadBannerView;
 }
 
 -(void)refreshGame
@@ -37,15 +38,16 @@
     currentLevel = 0;
     // Do any additional setup after loading the view, typically from a nib.
     CGSize screenSize = [UIScreen  mainScreen].bounds.size;
+    CGRect bannerFrame = CGRectMake(0, screenSize.height - 32, screenSize.width, 32);
     // Replace this ad unit ID with your own ad unit ID.
-    _gabBannerView.adUnitID = @"ca-app-pub-5203795935300879/4449248748";
-    _gabBannerView.delegate = self;
-    _gabBannerView.rootViewController = self;
-    _gabBannerView.adSize = kGADAdSizeSmartBannerLandscape;//GADAdSizeFromCGSize(CGSizeMake(screenSize.height, 50));
+    gadBannerView = [[DFPBannerView alloc]initWithFrame:bannerFrame];
+    gadBannerView.adUnitID = @"/6499/example/banner";//@"ca-app-pub-7643684312776612/8787977481";
+    gadBannerView.rootViewController = self;
+    gadBannerView.adSize = kGADAdSizeSmartBannerLandscape;
+    [self.view addSubview:gadBannerView];
     
     GADRequest *request = [GADRequest request];
-    request.contentURL = @"http://vnexpress.net/";
-    [_gabBannerView loadRequest:request];
+    [gadBannerView loadRequest:request];
     
     
     
@@ -59,7 +61,7 @@
 /// refreshing, you can examine the hasAutoRefreshed property of the view.
 - (void)adViewDidReceiveAd:(GADBannerView *)view
 {
-    
+    [self.view addSubview:view];
 }
 
 /// Called when an ad request failed. Normally this is because no network connection was available
