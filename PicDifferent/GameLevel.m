@@ -63,7 +63,7 @@
 {
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
     float imageViewWidth = (screenSize.width - 8)/2;
-    float imageViewHeight = screenSize.height - 42;
+    float imageViewHeight = screenSize.height - 42 -62;
     return  CGSizeMake(imageViewWidth, imageViewHeight);
 }
 

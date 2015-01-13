@@ -36,8 +36,38 @@
     [super viewDidLoad];
     currentLevel = 0;
     // Do any additional setup after loading the view, typically from a nib.
+    CGSize screenSize = [UIScreen  mainScreen].bounds.size;
+    // Replace this ad unit ID with your own ad unit ID.
+    _gabBannerView.adUnitID = @"ca-app-pub-5203795935300879/4449248748";
+    _gabBannerView.delegate = self;
+    _gabBannerView.rootViewController = self;
+    _gabBannerView.adSize = kGADAdSizeSmartBannerLandscape;//GADAdSizeFromCGSize(CGSizeMake(screenSize.height, 50));
+    
+    GADRequest *request = [GADRequest request];
+    request.contentURL = @"http://vnexpress.net/";
+    [_gabBannerView loadRequest:request];
+    
+    
+    
     NSArray *dictGameLevels = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"GameData" ofType:@"plist"]];
     gameLevels = [GameLevel parseListData:dictGameLevels];
+}
+
+#pragma Mark - GADBannerViewDelegate
+/// Called when an ad request loaded an ad. This is a good opportunity to add this view to the
+/// hierarchy if it has not been added yet. If the ad was received as a part of the server-side auto
+/// refreshing, you can examine the hasAutoRefreshed property of the view.
+- (void)adViewDidReceiveAd:(GADBannerView *)view
+{
+    
+}
+
+/// Called when an ad request failed. Normally this is because no network connection was available
+/// or no ads were available (i.e. no fill). If the error was received as a part of the server-side
+/// auto refreshing, you can examine the hasAutoRefreshed property of the view.
+- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error
+{
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated

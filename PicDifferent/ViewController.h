@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "TouchedImageView.h"
 #import "CustomViews/CheckMarkListView.h"
+#import "GADBannerView.h"
 
-@interface ViewController : UIViewController<TouchedImageViewDelegate>
+@interface ViewController : UIViewController<TouchedImageViewDelegate, GADBannerViewDelegate>
 @property (weak, nonatomic) IBOutlet TouchedImageView *leftImage;
 @property (weak, nonatomic) IBOutlet CheckMarkListView *checkMarkListView;
 
 @property (weak, nonatomic) IBOutlet TouchedImageView *rightImage;
+@property (weak, nonatomic) IBOutlet GADBannerView *gabBannerView;
 - (IBAction)btnRefresh:(id)sender;
 
 @end

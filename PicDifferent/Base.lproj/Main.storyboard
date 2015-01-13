@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="fyA-8p-N1O" customClass="TouchedImageView">
-                                <rect key="frame" x="0.0" y="42" width="296" height="558"/>
+                                <rect key="frame" x="0.0" y="42" width="296" height="496"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="5qg-90-8Ql"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 </variation>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="gUQ-NG-EO8" customClass="TouchedImageView">
-                                <rect key="frame" x="304" y="42" width="296" height="558"/>
+                                <rect key="frame" x="304" y="42" width="296" height="496"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="76H-zw-Sph"/>
                                 </constraints>
@@ -60,20 +60,30 @@
                                     <action selector="btnRefresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UP7-kd-N5V"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zK5-Xh-Tis" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aLN-PR-pUF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gUQ-NG-EO8" firstAttribute="top" secondItem="fyA-8p-N1O" secondAttribute="top" id="0Br-7q-NAj"/>
+                            <constraint firstAttribute="bottom" secondItem="zK5-Xh-Tis" secondAttribute="bottom" id="48N-Wr-nRV"/>
                             <constraint firstItem="fyA-8p-N1O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="42" id="6AE-Az-kcE"/>
                             <constraint firstItem="gUQ-NG-EO8" firstAttribute="leading" secondItem="fyA-8p-N1O" secondAttribute="trailing" constant="8" symbolic="YES" id="Ahl-qu-GEc"/>
                             <constraint firstItem="fyA-8p-N1O" firstAttribute="bottom" secondItem="gUQ-NG-EO8" secondAttribute="bottom" id="DuO-4c-1Ip"/>
-                            <constraint firstItem="fyA-8p-N1O" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Fpf-I3-X7P"/>
+                            <constraint firstItem="fyA-8p-N1O" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-62" id="Fpf-I3-X7P"/>
                             <constraint firstItem="P09-vr-cIB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="4" id="G3S-5e-Ju1"/>
+                            <constraint firstAttribute="trailing" secondItem="zK5-Xh-Tis" secondAttribute="trailing" id="KHw-ON-hA0"/>
                             <constraint firstItem="fyA-8p-N1O" firstAttribute="width" secondItem="gUQ-NG-EO8" secondAttribute="width" id="LK9-fT-Yhf"/>
                             <constraint firstItem="gUQ-NG-EO8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="42" id="Laq-C5-G4n"/>
                             <constraint firstItem="fyA-8p-N1O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MRA-sh-g0A"/>
+                            <constraint firstItem="zK5-Xh-Tis" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QPY-p9-Qih"/>
                             <constraint firstAttribute="trailing" secondItem="P09-vr-cIB" secondAttribute="trailing" constant="16" id="QtZ-tL-lSF"/>
-                            <constraint firstAttribute="bottom" secondItem="gUQ-NG-EO8" secondAttribute="bottom" id="Wei-1w-L9O"/>
+                            <constraint firstAttribute="bottom" secondItem="gUQ-NG-EO8" secondAttribute="bottom" constant="62" id="Wei-1w-L9O"/>
                             <constraint firstItem="gUQ-NG-EO8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="coc-i5-Zo1"/>
                             <constraint firstItem="fyA-8p-N1O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="eNI-c8-QZn"/>
                             <constraint firstItem="gUQ-NG-EO8" firstAttribute="leading" secondItem="fyA-8p-N1O" secondAttribute="trailing" constant="8" id="fHB-Ed-1NT"/>
@@ -98,6 +108,7 @@
                     </view>
                     <connections>
                         <outlet property="checkMarkListView" destination="1wD-W2-svr" id="p09-oH-5cv"/>
+                        <outlet property="gabBannerView" destination="zK5-Xh-Tis" id="fPT-m5-tqL"/>
                         <outlet property="leftImage" destination="fyA-8p-N1O" id="kwH-p7-XfE"/>
                         <outlet property="rightImage" destination="gUQ-NG-EO8" id="UqT-VP-EAD"/>
                     </connections>
